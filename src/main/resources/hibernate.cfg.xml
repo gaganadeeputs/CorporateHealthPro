@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/corporate_health_pro</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Ariba,2016</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hbm2ddl.auto">validate</property>
+		<property name="hibernate.query.substitutions">true 1, false 0</property>
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.User" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.UserRole" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.UserRolePermission" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.UserAdditionInfo" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.UserPermission" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.Address" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.Assesment" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.AssesmentQuestion" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.AssesmentQuestionChoice" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.Company" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.MedicalCamp" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.MedicalCampDetail" />
+		<mapping class="org.gagan.sap.messanger.persistance.pojo.MedicalCampDetailQuestionAnswer" />
+
+	</session-factory>
+</hibernate-configuration>
+
